@@ -4,7 +4,7 @@ jsflakes.vim
 A powerful vim plugin lint javascript code on the fly. [watch video](http://michalliu.github.com/jsflakes.vim)
 
 Install
-============
+-------
 
 1. You need install [jsruntime](https://github.com/michalliu/jsruntime.vim) first
 
@@ -18,9 +18,13 @@ Install
         filetype plugin on
 
 Usage
-============
+-----
 
 For javascript file, jsflakes will automaticlly check errors in your code while you editing. 
+
+If you don't like this behaviour. You can toggle the **A**utomatic **L**int by `<Leader>al` , your vim's \<Leader\> is often `\`.
+
+The command to run jshint manaually is `:JSHint`.
 
 The current errors are added to the window's location list.
 You can aslo use [quickfix commands](http://vimcdoc.sourceforge.net/doc/quickfix.html), like
@@ -29,7 +33,7 @@ You can aslo use [quickfix commands](http://vimcdoc.sourceforge.net/doc/quickfix
     :lopen open location window
     
 Advance Usage
-============
+-------------
 
 Jsflakes aslo support html file, add following to your __vimrc__
 
@@ -40,7 +44,7 @@ Jslint option file should be at __~/.jshintrc__ by default. your can change it t
 
     let g:jshint_rcfile = {PATH}
 
-Jsflakes aslo provide commands to run javascript directly inside VIM
+Jsflakes aslo provide commands to run javascript directly in VIM
 
 1. RunJS
 
